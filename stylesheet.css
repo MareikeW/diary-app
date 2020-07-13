@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  font-family: 'Calibri';
+  font-size: 3em;
+  padding: 0.5em 0;
+}
+
+.form-container {
+  width: 425px;
+  margin: 0 auto;
+  background: blue;
+}
+
+.textField {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+  padding: 1em;
+}
+
+.textField:focus {
+    outline: unset; /* entfernt automatisches border */
+}
+
+.btn-container {
+  width: 430px;
+  display: flex;
+  justify-content: flex-end;
+
+}
