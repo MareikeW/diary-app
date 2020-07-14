@@ -6,14 +6,18 @@
     <title>Mein Tagebuch</title>
   </head>
   <body>
-    <h1>Mein Tagebuch</h1>
+    <header>
+      <h1 id="heading">MyDiary</h1>
+    </header>
     <form class="form-container" action="index.html" method="post">
-      <textarea id="textArea" placeholder="Neuer Eintrag..." class="textField"></textarea>
+      <textarea id="textArea" placeholder="Liebes Tagebuch..." class="textField"></textarea>
       <br>
       <div class="btn-container">
-        <button type="submit" id="btn">Speichern</button>
+        <button type="submit" id="btn" class="submit-btn">Speichern</button>
       </div>
     </form>
+    <footer><p class="footer-content">&#169; 2020 Mareike Wendler</p></footer>
+    <script src="postEntry.js"></script>
   </body>
 </html>
 
