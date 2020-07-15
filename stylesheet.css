@@ -36,7 +36,7 @@ h1 {
 }
 
 .textField:focus {
-    outline: unset; /* entfernt automatisches border */
+  outline: unset; /* entfernt automatisches border */
 }
 
 .btn-container {
@@ -52,11 +52,26 @@ h1 {
   cursor: pointer;
 }
 
+.new-entry {
+  margin: 30px auto;
+  text-align: center;
+  width: 70%;
+  min-height: 100px;
+  padding: 1em;
+  border-radius: 15px;
+  background: orange;
+  font-size: 1.5em;
+}
+
+.new-entry:last-child {
+  margin-bottom: 110px;
+}
+
 footer {
   background: pink;
-
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 
