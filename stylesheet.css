@@ -9,66 +9,66 @@ body {
 
 header {
   margin-bottom: 60px;
+  background: #9C90E4;
 }
 
 h1 {
   font-size: 30px;
   text-align: center;
-  background: blue;
   padding: 10px 0;
 }
 
-.form-container {
+#formContainer {
   width: 440px;
   margin: 0 auto;
-  background: yellow;
 }
 
-.textField {
+.textArea {
   display: block;
   width: 400px;
   height: 200px;
   padding: 1em;
   border-radius: 15px;
-  border: 2px solid;
   font-size: 1.5em;
-  border-color: red lightblue lightblue red;
+  background: #FFC4FF;
+  border: none;
+  color: black;
 }
 
-.textField:focus {
-  outline: unset; /* entfernt automatisches border */
+.textArea:focus {
+   /* entfernt automatisches border */
+   outline: none;
+   border: solid;
 }
 
-.btn-container {
-  width: 440px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.submit-btn {
+.submitButton {
   padding: 0.6em 1.2em;
   border-radius: 15px;
   text-transform: uppercase;
   cursor: pointer;
+  background: #E58DD7;
+  border: none;
+  margin-left: 330px;
 }
 
-.new-entry {
+#entries {
   margin: 30px auto;
   text-align: center;
   width: 70%;
   min-height: 100px;
   padding: 1em;
   border-radius: 15px;
-  background: orange;
+  background: #AC59A0;
   font-size: 1.5em;
+  color: white;
 }
 
-.new-entry:last-child {
+#entries:last-child {
   margin-bottom: 110px;
 }
 
 footer {
-  background: pink;
+  background: #9C90E4;
   position: fixed;
   bottom: 0;
   left: 0;
