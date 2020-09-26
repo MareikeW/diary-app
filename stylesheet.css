@@ -49,9 +49,17 @@ h1 {
   background: #E58DD7;
   border: none;
   margin-left: 330px;
+  outline: none;
 }
 
-#entries {
+.entry-layout {
+  display: grid;
+  grid-template-areas: 
+  "title . date"
+  "content content content";
+}
+
+.new-entry {
   margin: 30px auto;
   text-align: center;
   width: 70%;
@@ -63,8 +71,22 @@ h1 {
   color: white;
 }
 
-#entries:last-child {
+.new-entry:last-child {
   margin-bottom: 110px;
+}
+
+.entry-title {
+  grid-area: title;
+}
+
+.date {
+  font-size: 0.7em;
+  word-spacing: 1px;
+  grid-area: date;
+}
+
+.entry-content {
+  grid-area: content;
 }
 
 footer {
