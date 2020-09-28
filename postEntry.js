@@ -8,24 +8,25 @@ var newEntry = "";
 
 
 function displayNewEntry(event){
-  // verhindert, dass Seite nach Klick neu geladen wird
+  // Verhindert, dass Seite nach Klick neu geladen wird.
   event.preventDefault();
   newEntry = document.createElement("div");
   newEntry.className = "new-entry";
   newEntry.textContent = textField.value;
-  // neuer Eintrag wird unter dem Button angezeigt
+
+  // Neuer Eintrag wird unter dem Button angezeigt.
   entriesList.push(newEntry);
-  
   entriesSection.append(newEntry);
-  // Löscht den eingegebenen Text und Platzhalter wird wieder angezeigt
+
+  // Löscht den eingegebenen Text und Platzhalter wird wieder angezeigt.
   textField.value = "";
 
-  // Zeigt Nummer des Eintrags, und dessen Inhalt an.
+  // Zeigt Nummer des Eintrags, Datum, und Inhalt an.
   newEntry.innerHTML = 
   `<div class="entry-layout">
-  <h5 class="entry-title">Eintrag ${entriesList.indexOf(newEntry)}</h5>
+  <h5 class="entry-title">Eintrag ${entriesList.indexOf(newEntry) + 1}</h5>
   <p class="date">${getDate()}</p>
-  <p class="entry-content">${newEntry.textContent}</p>
+  <p class="entry-content">${displaySmiley(newEntry.textContent)}</p>
   </div>`
 }
 
@@ -36,3 +37,15 @@ function getDate() {
   var entryDayAndTime = `${date.getDate()}.${date.getMonth()+ 1}.${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
   return entryDayAndTime;
 }
+
+function displaySmiley(newEntry) {
+      var addSmileyToText = "";
+      if (newEntry) {
+      addSmileyToText = newEntry.replace(/;\)/ig, "&#128521;");
+      addSmileyToText = newEntry.replace(/:\)/ig, "&#128578");
+      } else if (newEntry) {
+      addSmileyToText = newEntry.replace(/:\(/ig, "&#128577");
+      }
+      return addSmileyToText;  
+}
+/* es wird immer nur :) angezeigt.*/
