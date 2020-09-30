@@ -40,12 +40,12 @@ function getDate() {
 
 function displaySmiley(newEntry) {
       var addSmileyToText = "";
-      if (newEntry) {
+      
       addSmileyToText = newEntry.replace(/;\)/ig, "&#128521;");
-      addSmileyToText = newEntry.replace(/:\)/ig, "&#128578");
-      } else if (newEntry) {
-      addSmileyToText = newEntry.replace(/:\(/ig, "&#128577");
-      }
+      addSmileyToText = newEntry.replace(/:\)/ig, "&#128578;");
+      addSmileyToText = newEntry.replace(/:\(/ig, "&#128577;");
+    
+      //return addSmileyToText;
       return addSmileyToText;  
 }
-/* es wird immer nur :) angezeigt.*/
+/* es wird immer nur :( angezeigt.*/
