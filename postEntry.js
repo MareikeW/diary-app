@@ -26,7 +26,7 @@ function displayNewEntry(event){
   `<div class="entry-layout">
   <h5 class="entry-title">Eintrag ${entriesList.indexOf(newEntry) + 1}</h5>
   <p class="date">${getDate()}</p>
-  <p class="entry-content">${displaySmiley(newEntry.textContent)}</p>
+  <p class="entry-content">${newEntry.textContent}</p>
   </div>`
 }
 
@@ -38,7 +38,8 @@ function getDate() {
   return entryDayAndTime;
 }
 
-function displaySmiley(newEntry) {
+
+/*function displaySmiley(newEntry) {
       var addSmileyToText = "";
       
       addSmileyToText = newEntry.replace(/;\)/ig, "&#128521;");
@@ -48,4 +49,4 @@ function displaySmiley(newEntry) {
       //return addSmileyToText;
       return addSmileyToText;  
 }
-/* es wird immer nur :( angezeigt.*/
+es wird immer nur :( angezeigt.*/

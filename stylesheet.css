@@ -47,6 +47,41 @@ img {
    border-color: silver;
 }
 
+#select__stuff {
+  background-color: red;
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+}
+
+#select__emoji {
+  font-size: 1.2em;
+}
+
+#select__entry--backgroundColor {
+  height: 21px;
+  width: 21px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+#select__entry--fontFamily {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+#select__emoji:hover,
+#select__emoji:focus,
+#select__entry--backgroundColor:hover,
+#select__entry--backgroundColor:focus,
+#select__entry--fontFamily:hover,
+#select__entry--fontFamily:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .submitButton {
   padding: 0.6em 1.2em;
   border-radius: 15px;
