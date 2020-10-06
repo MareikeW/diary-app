@@ -47,40 +47,56 @@ img {
    border-color: silver;
 }
 
+
+
+
 #select__stuff {
   background-color: red;
-  width: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 30px;
+  width: 90px; 
 }
 
-#select__emoji {
+.emoji {
   font-size: 1.2em;
 }
 
-#select__entry--backgroundColor {
+.background--color {
   height: 21px;
   width: 21px;
   background-color: blue;
   border-radius: 50%;
 }
 
-#select__entry--fontFamily {
+.font {
   font-size: 1.8em;
   font-weight: 700;
 }
 
-#select__emoji:hover,
-#select__emoji:focus,
-#select__entry--backgroundColor:hover,
-#select__entry--backgroundColor:focus,
-#select__entry--fontFamily:hover,
-#select__entry--fontFamily:focus {
+.list__item:hover,
+.list__item:focus {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.list--additions {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+}
+
+.list--additions {
+  width: 300px;
+  background-color: yellow;
+}
+
+#emoji__list,
+#backgroundColor__list,
+#fontFamily__list {
+  display: none;
+}
+
+
 
 .submitButton {
   padding: 0.6em 1.2em;

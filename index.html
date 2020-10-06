@@ -12,7 +12,50 @@
     <img src="utils/notebook_pic.png" alt="Ein Füller und ein Notizbuch." id="notebook-pic"/>
     <form id="formContainer">
       <textarea placeholder="Liebes Tagebuch..." class="textArea" required></textarea>
-      <div id="select__stuff"><span id="select__emoji">&#128578;</span><span id="select__entry--backgroundColor"></span><span id="select__entry--fontFamily">A</span></div>
+      <ul id="emoji__list" class="list--additions">
+        <li class="emoji list__item">&#128578;</li>
+        <li class="emoji list__item">&#128514;</li>
+        <li class="emoji list__item">&#128580;</li>
+        <li class="emoji list__item">&#128555;</li>
+        <li class="emoji list__item">&#129300;</li>
+        <li class="emoji list__item">&#128525;</li>
+        <li class="emoji list__item">&#129325;</li>
+        <li class="emoji list__item">&#128517;</li>
+        <li class="emoji list__item">&#129505;</li>
+        <li class="emoji list__item">&#128293;</li>
+      </ul>
+
+      <ul id="backgroundColor__list" class="list--additions">
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+        <li class="background--color list__item"></li>
+      </ul>
+
+      <ul id="fontFamily__list" class="list--additions">
+        <li class="font list__item">A</li>
+        <li class="font list__item">B</li>
+        <li class="font list__item">C</li>
+        <li class="font list__item">D</li>
+        <li class="font list__item">E</li>
+        <li class="font list__item">F</li>
+        <li class="font list__item">G</li>
+        <li class="font list__item">H</li>
+        <li class="font list__item">I</li>
+        <li class="font list__item">J</li>
+      </ul>
+      
+      <ul id="select__stuff" class="list--additions">
+        <li id="select__emoji" class="emoji list__item select__item">&#128578;</li>
+        <li id="select__entry--backgroundColor" class="background--color list__item select__item"></li>
+        <li id="select__entry--fontFamily" class="font list__item select__item">A</li>
+      </ul>
       <br>
       <button type="submit" class="submitButton">Speichern</button>
     </form>

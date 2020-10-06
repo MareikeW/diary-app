@@ -6,6 +6,7 @@ var entriesSection = document.querySelector("#entries"); // verknüpft mit Teil 
 var entriesList = [];
 var newEntry = "";
 
+var openListToSelect = document.getElementsByClassName(".select__item");
 
 function displayNewEntry(event){
   // Verhindert, dass Seite nach Klick neu geladen wird.
@@ -37,6 +38,12 @@ function getDate() {
   var entryDayAndTime = `${date.getDate()}.${date.getMonth()+ 1}.${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
   return entryDayAndTime;
 }
+
+openListToSelect.addEventListener("click", function addEmoji() {
+    if (openListToSelect === )
+    document.getElementById("emoji__list").style.display = "flex";
+});
+
 
 
 /*function displaySmiley(newEntry) {
