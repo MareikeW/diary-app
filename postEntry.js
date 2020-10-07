@@ -6,7 +6,11 @@ var entriesSection = document.querySelector("#entries"); // verknüpft mit Teil 
 var entriesList = [];
 var newEntry = "";
 
-var openListToSelect = document.getElementsByClassName(".select__item");
+var openEmojiList = document.getElementById("select__emoji");
+var emojiList = document.getElementById("emoji__list");
+
+var openBackgroundColorList = document.getElementById("select__entry--backgroundColor");
+var backgroundColorList = document.getElementById("backgroundColor__list");
 
 function displayNewEntry(event){
   // Verhindert, dass Seite nach Klick neu geladen wird.
@@ -39,21 +43,18 @@ function getDate() {
   return entryDayAndTime;
 }
 
-openListToSelect.addEventListener("click", function addEmoji() {
-    if (openListToSelect === )
-    document.getElementById("emoji__list").style.display = "flex";
+openEmojiList.addEventListener("click", function addEmoji() {
+    if (emojiList.style.display === "flex") {
+      emojiList.style.display = "none";
+    } else {
+      emojiList.style.display = "flex";
+    }
 });
 
-
-
-/*function displaySmiley(newEntry) {
-      var addSmileyToText = "";
-      
-      addSmileyToText = newEntry.replace(/;\)/ig, "&#128521;");
-      addSmileyToText = newEntry.replace(/:\)/ig, "&#128578;");
-      addSmileyToText = newEntry.replace(/:\(/ig, "&#128577;");
-    
-      //return addSmileyToText;
-      return addSmileyToText;  
-}
-es wird immer nur :( angezeigt.*/
+openBackgroundColorList.addEventListener("click", function changeBackgroundColor() {
+  if (backgroundColorList.style.display === "flex") {
+    backgroundColorList.style.display = "none";
+  } else {
+    backgroundColorList.style.display = "flex";
+  }
+});
